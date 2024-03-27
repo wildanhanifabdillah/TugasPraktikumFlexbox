@@ -1,0 +1,108 @@
+ *{
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 750px;
+    height: 300px;
+    margin: auto;
+    margin-top: 16em;
+    background-color: #fff;
+    border-radius: 15px;
+  }
+  
+  .flex-gambar img {
+    border-radius: 10px 0px 0px 10px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .flex-content {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+  }
+  
+  .flex-content2 {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+  
+  .pp-username {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .pp img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  
+  .username p {
+    height: 50%;
+  }
+
+  .icon{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: hsl(210, 46%, 95%);
+  }
+  
+  .icon img {
+    width: 15px;
+    height: 15px;
+  }
+
+  @media only screen and (max-width: 800px){
+    body{
+        font-size: 10px;
+    }
+    .flex-container{
+        display: block;
+        width: 300px;
+        height: 420px;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 160px;
+    }
+    .img{
+        border-radius: 10px 10px 0px 0px;
+        width: 300px;
+        height: 160px;
+    }
+    .flex-content{
+        display: flex;
+        direction: column;
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+    .flex-content2{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+  }
